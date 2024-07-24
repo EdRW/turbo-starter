@@ -1,0 +1,18 @@
+{
+  "name": "@edrw/typescript-config",
+  "version": "0.0.1",
+  "author": "Edmund Rosewright",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EdRW/turbo-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EdRW/turbo-starter/issues"
+  },
+  "homepage": "https://github.com/EdRW/turbo-starter/tree/main/packages/config-typescript",
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  }
+}
