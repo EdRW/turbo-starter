@@ -6,7 +6,6 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "pnpm build --watch",
-    "lint": "eslint --ext .js,.ts src",
     "check-types": "tsc --noEmit",
     "test": "jest",
     "test:watch": "pnpm test --watch"
@@ -17,15 +16,8 @@
     "./add": "./src/add.ts",
     "./subtract": "./src/subtract.ts"
   },
-  "files": [
-    "dist",
-    "src",
-    "README.md",
-    "package.json",
-    "!**/*.test.*"
-  ],
+  "files": ["dist", "src", "README.md", "package.json", "!**/*.test.*"],
   "devDependencies": {
-    "@edrw/eslint-config": "workspace:*",
     "@edrw/jest-config": "workspace:*",
     "@edrw/typescript-config": "workspace:*",
     "@types/jest": "^29.5.12",

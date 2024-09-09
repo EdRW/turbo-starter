@@ -2,10 +2,7 @@
   "name": "@edrw/jest-config",
   "version": "0.0.0",
   "private": true,
-  "files": [
-    "browser/jest-preset.js",
-    "node/jest-preset.js"
-  ],
+  "files": ["browser/jest-preset.js", "node/jest-preset.js"],
   "exports": {
     "./browser": "./browser/jest-preset.js",
     "./node": "./node/jest-preset.js"

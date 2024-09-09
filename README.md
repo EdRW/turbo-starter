@@ -1,5 +1,7 @@
 # edrw-turbo-starter
 
+[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
+
 A monorepo starter project powered by Turborepo.
 
 ## Install
@@ -24,7 +26,6 @@ This monorepo includes the following packages, which are published to npm:
 
 It also includes the following configuration packages:
 
-- [`@edrw/eslint-config`](./packages/eslint-config/): `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - [`@edrw/typescript-config`](./packages/tsconfig/): `tsconfig.json`s used throughout the monorepo
 - [`@edrw/jest-config`](./packages/jest-config/): `jest` configurations used throughout the monorepo
 
@@ -47,16 +48,14 @@ Start dev servers or file watchers that auto reload on file changes.
 pnpm dev
 ```
 
-### Lint
+### Format and Line
 
 ```bash
-pnpm lint
+pnpm format-and-lint
 ```
 
-### Format
-
 ```bash
-pnpm format
+pnpm format-and-lint:fix
 ```
 
 ### Test
@@ -72,5 +71,4 @@ Read more about the tooling used in this monorepo:
 - [Turborepo](https://turbo.build/repo/): a tool for managing monorepos
 - [Changesets](https://github.com/changesets/changesets): a tool for managing changelogs and [semantic versioning](https://semver.org/)
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- [Biomejs](https://biomejs.dev): a batteries-included formatter + linter, a unified replacement for `prettier` and `eslint`

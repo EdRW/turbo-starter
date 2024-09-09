@@ -7,14 +7,12 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "pnpm build --watch",
-    "lint": "eslint --ext .js,.ts src",
     "check-types": "tsc --noEmit",
     "test": "jest --detectOpenHandles",
     "test:watch": "pnpm test --watch"
   },
   "dependencies": {},
   "devDependencies": {
-    "@edrw/eslint-config": "workspace:*",
     "@edrw/jest-config": "workspace:*",
     "@edrw/typescript-config": "workspace:*",
     "@edrw/math": "workspace:*",
