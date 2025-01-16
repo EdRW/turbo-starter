@@ -1,20 +1,34 @@
 {
   "name": "@edrw/eslint-config",
   "version": "0.0.0",
+  "author": "Edmund Rosewright",
   "private": true,
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "eslint .",
+    "check-types": "tsc --noEmit"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "files": [
-    "base.mjs",
-    "library.js",
-    "next.js",
-    "react-internal.js"
+    "dist",
+    "src",
+    "README.md",
+    "package.json"
   ],
   "devDependencies": {
+    "@edrw/typescript-config": "workspace:*",
     "@eslint/js": "^9.18.0",
-    "@types/eslint": "^8.56.12",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "22.10",
     "eslint": "^9.18.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-config-turbo": "^2.3.3",
-    "eslint-plugin-only-warn": "^1.1.0",
+    "globals": "^15.14.0",
+    "jiti": "^2.4.2",
+    "tsup": "^8.3.5",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.19.1"
   }
